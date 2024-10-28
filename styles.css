@@ -1,0 +1,459 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:#f8f8f8;
+}
+
+header {
+    position: sticky; 
+    background: #392952;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+.img1 {
+    
+    /* border: 5px solid rgb(224, 192, 255); */
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.navbar a {
+    color:#f8f8f8;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: medium ;
+}
+
+section {
+    padding: 5rem 1rem;
+    margin-top: 4rem;
+    /* Offset for fixed header */
+}
+
+.info{
+    background: #f8f8f8;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size:30px;
+    font-weight: 700;
+    font-style: normal;
+    color:#392952;
+}
+
+
+.info1{
+    background: #f8f8f8;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size:20px;
+    font-weight: 450;
+    font-style: bold;
+    color:#392952; 
+}
+
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+
+
+.card-header {
+    padding-left: 2%;
+    text-align: left;
+    font-family: "Source Code Pro", monospace;
+    font-size:25px;
+    font-weight: 500;
+    font-style: medium ;
+    border-radius: 10px;
+    color: #fff;
+}
+.card-info {
+    padding-left: 5%;
+    text-align: left;
+    font-family: "Source Code Pro", monospace;
+    font-size:20px;
+    font-weight: 500;
+    font-style: medium ;
+    border-radius: 10px;
+    color: #fff;
+}
+.card-info1{
+    padding-left: 5%;
+    text-align: left;
+    font-family: "Source Code Pro", monospace;
+    font-size:15px;
+    font-weight: 500;
+    font-style: medium ;
+    border-radius: 10px;
+    color: #fff;
+}
+.card-info1{
+    padding-left: 5%;
+    text-align: left;
+    font-family: "Source Code Pro", monospace;
+    font-size:15px;
+    font-weight: 500;
+    font-style: medium ;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+
+.card {
+    background-color:#6a416e ; /* Background color for card */
+    padding: 20px; /* Space inside the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Slightly enlarges the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for effect */
+}
+
+.cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.container {
+    padding-left: 2%;
+    display: flex;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2px;
+   }
+   
+   .text {
+    gap: 1rem; 
+    width: 400px; 
+     font-size: 10px;
+   }
+
+   .circle-frame {
+    width: 80px; /* Set the width of the image */
+    height: 80px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the frame */
+}
+.bigframe {
+    width: 300px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the frame */
+}
+
+
+.navtopic{
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-size:35px;
+    font-weight: 800;
+    color: #67328a;
+}
+
+#about {
+    background: #f8f8f8;
+    padding-top: 2%;
+}
+
+
+#contact {
+    padding-top: 2%;
+    background: #f8f8f8;
+}
+
+
+.nav-list {
+    list-style-type: none; /* Remove default list styling */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center the nav items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+    position: relative; /* Position for dropdown */
+    display: inline; 
+    margin-right: 20px;
+}
+
+.nav-list a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+    display: block; /* Block display for links */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.nav-list a:hover {
+    background-color: #8e42be; /* Darker blue on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.dropdown-content {
+   
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned relative to the dropdown */
+    background-color: rgb(181, 83, 234); /* Dropdown background color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow effect */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* On top of other content */
+    min-width: 150px; /* Minimum width for dropdown */
+    margin-top: 5px; /* Spacing above dropdown */
+}
+
+.dropdown-content a {
+    color: #ffffff; /* Link color */
+    padding: 10px 15px; /* Padding for dropdown links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for links */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(205, 140, 241);  /* Light gray on hover */
+}
+
+.bigframe {
+    width: 300px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the frame */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bigframe:hover {
+    transform: scale(1.01); /* Slightly enlarges the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for effect */
+}
+
+.contact-container {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center items */
+    gap: 75px; /* Space between image and card */
+}
+
+.contact-info:hover{
+    transform: scale(1.01); /* Slightly enlarges the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for effect */
+}
+
+.profile-pic {
+    width: 200px; /* Set width for the profile picture */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+.contact-info {
+    width: 600px; /* Increased width for contact info box */
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Increased max-width to allow text to fit in one line */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info p, .contact-info a {
+    display: inline-block; /* Ensures email and phone are inline */
+    margin: 10px 0; /* Space between each item */
+    font-size: 18px;
+}
+
+
+.contact-a {
+    font-family: "Source Code Pro", monospace;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px; /* Spacing between label and email */
+}
+.contact-b {
+    font-family: "Source Code Pro", monospace;
+    color: #6e2cd9;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px; /* Spacing between label and email */
+}
+.social-media a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2em; /* Adjusts icon size */
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-media i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.social-media a:hover {
+    color: #0056b3;
+}
+.school-name {
+    position: relative;
+    display: inline-block;
+    color: #ffffff; /* Optional: Adjust text color */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.school-name::after {
+    content: '';
+     text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust for underline distance from text */
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; /* Optional: Adjust underline color */
+    transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.school-name:hover::after {
+    width: 100%; /* Expands the underline from left to right */
+}
+
+.school-name:hover {
+     text-decoration: none;
+    color: #ffffff; /* Optional: Color change on hover */
+}
+
+.school-namesm {
+    position: relative;
+    display: inline-block;
+    color: #ffffff; /* Optional: Adjust text color */
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size:19px;
+
+}
+
+.school-namesm::after {
+    content: '';
+     text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust for underline distance from text */
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; /* Optional: Adjust underline color */
+    transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.school-namesm:hover::after {
+    width: 100%; /* Expands the underline from left to right */
+}
+
+.school-namesm:hover {
+     text-decoration: none;
+    color: #ffffff; /* Optional: Color change on hover */
+}
+#certificate-gallery {
+    padding: 20px;
+    color: #4e1075;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size:20px;
+    font-weight: 700;
+   
+    text-align: center;
+    padding-top: 60px;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certificate-container {
+    display: flex;
+    flex-direction: column; /* Stack certificates vertically */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Space between certificates */
+    
+}
+
+
+.certificate-item {
+    background-color: #ffffff;
+    display: flex;
+    border: 1px solid #ddd; /* Border for each certificate item */
+    border-radius: 8px;
+    overflow: hidden; /* Ensures children don't overflow */
+    width: 90%; /* Increased width of the certificate item */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.certificate-item:hover {
+    transform: scale(1.01); /* Slightly enlarges the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for effect */
+}
+.certificate-image {
+    width: 50%; /* Set width of the image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: none; /* Allow the image to exceed the container width */
+}
+
+.certificate-details {
+    padding: 20px; /* Space around text */
+    width: 50%; /* Width of the details section */
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-size:15px;
+    font-weight: 700;
+    color: #643ca3;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.certificate-details h2 {
+    margin: 0 0 10px; /* Space below title */
+}
+
+.certificate-details p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.bgcer{
+    background-color: #f8f8f8;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korapin | Portfolio</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+    <!-- Landing Page Section -->
+    <section id="landing" class="landing-page">
+        <div class="content">
+            <div class="typewriter">
+                <h1 id="typewriterText"></h1>
+            </div>  
+            <br/><br/>   
+            <a href="home.html" id="exploreButton" class="button">enter</a> <!-- Links to about.html -->
+        </div>
+    </section>
+
+    <script>
+        // Typewriter effect script
+        const text = "Korapin Manoprasertkoon (n.)";
+        const typewriterElement = document.getElementById("typewriterText");
+        const exploreButton = document.getElementById("exploreButton");
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                typewriterElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Adjust typing speed here
+            } else {
+                // Show the button after typing is done
+                setTimeout(() => {
+                    exploreButton.style.display = "inline-block"; // Show the button after typing is done
+                }, 1000); // Wait an additional second before showing the button
+            }
+        }
+
+        typeWriter(); // Start the typing effect
+    </script>
+
+</body>
+</html>
